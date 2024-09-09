@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="script2.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index2.html">Home</a></li>
+                <li><a href="admin_login.html">Admin Login</a></li>
+                <li><a href="login2.html">Login</a></li>
+                <li><a href="todo.html">To-Do List</a></li>
+                <li><a href="contact1.html">Contact</a></li>
+                <li><a href="projects2.html">Projects</a></li>
+                <li><a href="gallery2.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm" action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
+
+                <!-- Captcha Section -->
+                <div id="captchaContainer" class="form-group">
+                    <label for="captchaInput">Enter Captcha:</label>
+                    <div id="captchaText"></div> <!-- CAPTCHA text will be displayed here -->
+                    <input type="text" id="captchaInput" placeholder="Enter the captcha" required>
+                </div>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pinninti Anju</p>
+    </footer>
+</body>
+</html>
